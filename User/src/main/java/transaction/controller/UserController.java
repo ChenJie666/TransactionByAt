@@ -1,5 +1,6 @@
 package transaction.controller;
 
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 import transaction.service.UserService;
 
@@ -14,6 +15,11 @@ public class UserController {
 
     @Resource
     private UserService userService;
+
+    @PutMapping("/points")
+    public void points(Long userId, Long points){
+        userService.decreasePoints(userId, points);
+    }
 
 
 }

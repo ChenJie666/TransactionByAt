@@ -1,5 +1,6 @@
 package transaction.controller;
 
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 import transaction.service.CommodityService;
 
@@ -15,5 +16,9 @@ public class CommodityController {
     @Resource
     private CommodityService commodityService;
 
+    @PutMapping("stock")
+    public void stock(Long commodityId, Long stock){
+        commodityService.decreaseStock(commodityId, stock);
+    }
 
 }

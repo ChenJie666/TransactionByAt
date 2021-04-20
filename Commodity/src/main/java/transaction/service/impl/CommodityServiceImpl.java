@@ -15,7 +15,6 @@ import transaction.service.CommodityService;
 @Service
 public class CommodityServiceImpl extends ServiceImpl<CommodityMapper, Commodity> implements CommodityService {
 
-
     @Override
     public Boolean decreaseStock(Long commodityId, Long num) {
         // TODO 扣减库存

@@ -24,3 +24,4 @@ eureka:
     lease-expiration-duration-in-seconds: 15
     lease-renewal-interval-in-seconds: 5
     health-check-url-path: /actuator/health
+    ip-address:
