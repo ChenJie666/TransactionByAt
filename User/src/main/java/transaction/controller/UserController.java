@@ -17,9 +17,8 @@ public class UserController {
     private UserService userService;
 
     @PutMapping("/points")
-    public void points(Long userId, Long points){
+    public void insertPoints(Long userId, Long points){
         userService.decreasePoints(userId, points);
     }
-
 
 }

@@ -6,6 +6,10 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: my_test_tx_group
 
 management:
   endpoints:

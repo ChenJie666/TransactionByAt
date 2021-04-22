@@ -1,0 +1,9 @@
+transaction\entities\TbOrder.class
+transaction\service\impl\OrderServiceImpl.class
+transaction\config\DataSourceProxyConfiguration.class
+transaction\controller\OrderController.class
+transaction\service\OrderService.class
+transaction\OrderApplication.class
+transaction\feign\CommodityFeign.class
+transaction\feign\UserFeign.class
+transaction\mapper\OrderMapper.class

@@ -17,11 +17,13 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:9999/eureka/
+      defaultZone: http://192.168.32.230:8761/eureka/
   instance:
     instance-id: ${spring.application.name}
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 15
     lease-renewal-interval-in-seconds: 5
     health-check-url-path: /actuator/health
-    ip-address:
+
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*Mapper.xml

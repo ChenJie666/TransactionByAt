@@ -9,4 +9,5 @@ import transaction.entities.User;
  */
 public interface UserService extends IService<User> {
     Boolean decreasePoints(Long userId, Long points);
+
 }

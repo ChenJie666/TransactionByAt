@@ -2,6 +2,7 @@ package transaction.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author CJ
@@ -16,6 +17,6 @@ public interface UserFeign {
      * @param points 用户积分
      */
     @PutMapping("/points")
-    void points(Long userId, Long points);
+    void points(@RequestParam("userId") Long userId,@RequestParam("points") Long points);
 
 }

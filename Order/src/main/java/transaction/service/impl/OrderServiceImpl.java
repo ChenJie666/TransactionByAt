@@ -26,7 +26,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, TbOrder> implemen
     private CommodityFeign commodityFeign;
 
     @Override
-    @GlobalTransactional(name = "seata_group", rollbackFor = Exception.class)
+    @GlobalTransactional(name = "my_seata_group", rollbackFor = Exception.class)
     @Transactional(rollbackFor = Exception.class)
     public String order(TbOrder tbOrder) {
         // TODO 创建订单并发送消息
